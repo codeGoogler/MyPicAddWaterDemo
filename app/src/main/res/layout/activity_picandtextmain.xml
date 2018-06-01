@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout tools:context="com.king.yyh.wk.activity.PicAndTextMainActivity"
+    android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="match_parent" android:src="@drawable/pic_03" android:layout_centerHorizontal="true" android:scaleType="centerInside" android:id="@+id/wartermark_pic"/>
+
+
+    <RadioGroup android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/rg_wartermark" android:layout_below="@+id/wartermark_pic" android:layout_marginTop="10dp" android:orientation="horizontal">
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/rb_wartermark_lefttop" android:text="左上角"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/rb_wartermark_righttop" android:text="右上角"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/rb_wartermark_rightbottom" android:text="右下角"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/rb_wartermark_leftbottom" android:text="左下角" android:checked="true"/>
+
+</RadioGroup>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btn_threadpoolexecutor"/>
+
+</LinearLayout>

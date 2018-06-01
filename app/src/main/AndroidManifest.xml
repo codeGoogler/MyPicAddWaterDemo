@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.king.yyh.wk">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".App"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+     <activity android:name=".activity.PictrueSelectMainActivity" />
+        <activity android:name=".activity.PicAndTextMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--<activity android:name=".activity.PictrueSelectMainActivity"></activity>-->
+        <activity android:name=".fragment.PhotoFragmentActivity"/>
+        <activity android:name=".activity.SimpleActivity"/>
+        <activity android:name=".activity.select2.SelectPicActivity"
+            android:label="@string/title_activity_select_pic"
+            android:launchMode="singleTop"
+            android:theme="@style/myTransparent" />
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.select2.PicMainActivity2"/>
+        <activity android:name=".activity.exexecutorpool.ThreadPoolExecutorActivity"/>
+    </application>
+
+</manifest>
